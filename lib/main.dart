@@ -11,9 +11,8 @@ class PetScreen extends StatefulWidget {
 }
 
 class _PetScreenState extends State<PetScreen> {
-  // TEST VALUES. Restore to seconds: 30 and minutes: 3 before the release build.
-  static const _hungerInterval = Duration(seconds: 5);
-  static const _winDuration = Duration(seconds: 5);
+  static const _hungerInterval = Duration(seconds: 30);
+  static const _winDuration = Duration(minutes: 3);
 
   String _petName = 'Pip';
   int _happiness = 50;
