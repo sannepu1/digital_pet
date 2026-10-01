@@ -1,4 +1,5 @@
 import 'dart:async';
+
 import 'package:flutter/material.dart';
 
 void main() => runApp(const MaterialApp(home: PetScreen()));
@@ -38,9 +39,11 @@ class _PetScreenState extends State<PetScreen> {
             ElevatedButton(onPressed: _feedPet, child: const Text('Feed')),
             ElevatedButton(onPressed: _playWithPet, child: const Text('Play')),
             ElevatedButton(
-                onPressed: _togglePause,
-                child: Text(_paused ? 'Resume' : 'Pause')),
+              onPressed: _togglePause,
+              child: Text(_paused ? 'Resume' : 'Pause'),
+            ),
             ElevatedButton(onPressed: _reset, child: const Text('Reset')),
+            Image.asset('assets/pet.png', width: 200, height: 200),
           ],
         ),
       ),
